@@ -54,7 +54,7 @@ export default function Products() {
   return (
     <>
       <Helmet>
-        <title>{title} | WhitePepper Shop</title>
+        <title>{title} | WhitPepper Shop</title>
         <meta name="description" content="Browse our collection of premium spices from Coorg, Karnataka." />
       </Helmet>
 
