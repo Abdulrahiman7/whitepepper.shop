@@ -54,7 +54,7 @@ export default function Header() {
         <div className="flex items-center mb-4 md:mb-0">
           <Link href="/" className="flex items-center">
             <h1 className="text-2xl md:text-3xl font-bold font-serif text-primary">
-              <span className="text-amber-500">Whit</span>Pepper<span className="text-xs font-sans align-top">.shop</span>
+              <span className="text-amber-500">White</span>Pepper<span className="text-xs font-sans align-top">.shop</span>
             </h1>
           </Link>
         </div>
