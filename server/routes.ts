@@ -303,6 +303,94 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Razorpay integration
+  app.post("/api/create-razorpay-order", async (req: Request, res: Response) => {
+    try {
+      const { amount, orderId, currency = "INR", receipt } = req.body;
+      
+      if (!process.env.RAZORPAY_KEY_ID || !process.env.RAZORPAY_KEY_SECRET) {
+        return res.status(500).json({ 
+          error: "Razorpay keys not configured. Please add RAZORPAY_KEY_ID and RAZORPAY_KEY_SECRET to environment variables."
+        });
+      }
+      
+      const Razorpay = require('razorpay');
+      const instance = new Razorpay({
+        key_id: process.env.RAZORPAY_KEY_ID,
+        key_secret: process.env.RAZORPAY_KEY_SECRET,
+      });
+      
+      const options = {
+        amount: amount * 100, // amount in smallest currency unit (paise for INR)
+        currency,
+        receipt: receipt || `receipt_order_${orderId}`,
+        notes: {
+          orderId: orderId.toString()
+        }
+      };
+      
+      const razorpayOrder = await instance.orders.create(options);
+      res.status(200).json({
+        id: razorpayOrder.id,
+        currency: razorpayOrder.currency,
+        amount: razorpayOrder.amount,
+        orderId
+      });
+    } catch (error) {
+      console.error("Error creating Razorpay order:", error);
+      res.status(500).json({ error: "Failed to create Razorpay order" });
+    }
+  });
+  
+  // Verify Razorpay payment signature
+  app.post("/api/verify-payment", async (req: Request, res: Response) => {
+    try {
+      const { razorpay_order_id, razorpay_payment_id, razorpay_signature, orderId } = req.body;
+      
+      if (!process.env.RAZORPAY_KEY_SECRET) {
+        return res.status(500).json({ error: "Razorpay secret key not configured" });
+      }
+      
+      // Verify the signature
+      const crypto = require('crypto');
+      const hmac = crypto.createHmac('sha256', process.env.RAZORPAY_KEY_SECRET);
+      hmac.update(razorpay_order_id + "|" + razorpay_payment_id);
+      const generatedSignature = hmac.digest('hex');
+      
+      if (generatedSignature === razorpay_signature) {
+        // Payment is successful, update order status in database
+        if (orderId) {
+          const order = await storage.getOrderById(Number(orderId));
+          if (order) {
+            // Update the order with payment details
+            // Note: You'd typically have a method to update orders in your storage
+            // We'll assume it's completed since we've verified the payment
+            
+            // For now we'll just return success
+            return res.status(200).json({ 
+              success: true,
+              message: "Payment verified successfully",
+              orderId
+            });
+          }
+        }
+        
+        return res.status(200).json({ 
+          success: true,
+          message: "Payment verified successfully"
+        });
+      } else {
+        return res.status(400).json({ 
+          success: false, 
+          error: "Payment verification failed" 
+        });
+      }
+    } catch (error) {
+      console.error("Error verifying payment:", error);
+      res.status(500).json({ error: "Failed to verify payment" });
+    }
+  });
+
   // Create and return the HTTP server
   const httpServer = createServer(app);
   return httpServer;
