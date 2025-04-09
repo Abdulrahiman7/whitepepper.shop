@@ -63,10 +63,7 @@ app.use((req, res, next) => {
   
   // Try alternate ports if 5000 is in use
   const startServer = () => {
-    server.listen({
-      port,
-      host: "0.0.0.0",
-    }, () => {
+    server.listen(port, () => {
       log(`serving on port ${port}`);
     }).on('error', (err: any) => {
       if (err.code === 'EADDRINUSE') {
