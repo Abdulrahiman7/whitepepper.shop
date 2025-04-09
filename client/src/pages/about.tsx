@@ -38,7 +38,7 @@ export default function About() {
             At WhitePepper, our mission is to connect spice enthusiasts with the authentic flavors of Coorg, while supporting sustainable farming practices and empowering local communities. We believe that every meal deserves the finest ingredients, and every spice has a story to tell.
           </p>
           <div className="flex justify-center">
-            <div className="h-1 w-20 bg-green-500"></div>
+            <div className="h-1 w-20 bg-amber-500"></div>
           </div>
         </div>
       </section>
@@ -84,8 +84,8 @@ export default function About() {
         <h2 className="text-3xl font-serif font-bold text-primary mb-12 text-center">Our Values</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-green-700">
+            <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-amber-700">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
               </svg>
             </div>
@@ -96,8 +96,8 @@ export default function About() {
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-green-600">
+            <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-amber-600">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
               </svg>
             </div>
@@ -181,7 +181,7 @@ export default function About() {
           Join us on our journey to bring the authentic flavors of Coorg to kitchens around the world. Whether you're a professional chef or a home cooking enthusiast, our premium spices will elevate your culinary creations.
         </p>
         <Link href="/products">
-          <Button className="bg-green-700 hover:bg-green-900 text-white px-8 py-6 text-lg">
+          <Button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 text-lg">
             Shop Our Collection
           </Button>
         </Link>

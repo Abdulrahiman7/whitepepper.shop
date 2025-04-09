@@ -42,15 +42,15 @@ export default function CartItem({ item, onClose }: CartItemProps) {
       </Link>
       <div className="flex-grow">
         <Link href={`/products/${item.product.slug}`} onClick={onClose}>
-          <h4 className="text-primary font-medium cursor-pointer hover:text-green-700 transition-colors">
+          <h4 className="text-primary font-medium cursor-pointer hover:text-amber-700 transition-colors">
             {item.product.name}
           </h4>
         </Link>
         <p className="text-sm text-gray-600">{item.product.weight}</p>
         <div className="flex justify-between items-center mt-2">
-          <div className="flex items-center border rounded-full overflow-hidden">
+          <div className="flex items-center border border-amber-200 rounded-full overflow-hidden">
             <button 
-              className="px-2 py-1 text-gray-600 hover:bg-gray-100"
+              className="px-2 py-1 text-amber-600 hover:bg-amber-50"
               onClick={handleDecreaseQuantity}
               disabled={item.quantity <= 1}
             >
@@ -58,7 +58,7 @@ export default function CartItem({ item, onClose }: CartItemProps) {
             </button>
             <span className="px-2 py-1">{item.quantity}</span>
             <button 
-              className="px-2 py-1 text-gray-600 hover:bg-gray-100"
+              className="px-2 py-1 text-amber-600 hover:bg-amber-50"
               onClick={handleIncreaseQuantity}
             >
               <Plus size={14} />
