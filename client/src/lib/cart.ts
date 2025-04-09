@@ -162,7 +162,7 @@ export const useCart = create<CartState>()(
       }
     }),
     {
-      name: 'whitpepper-cart',
+      name: 'whitepepper-cart',
       // Only persist the sessionId
       partialize: (state) => ({ sessionId: state.sessionId })
     }

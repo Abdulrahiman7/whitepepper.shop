@@ -24,8 +24,8 @@ export default function InstagramFeed() {
     <section className="container mx-auto px-4 mb-20">
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-3xl font-serif font-bold text-primary">Follow Us on Instagram</h2>
-        <a href="https://www.instagram.com/whitpepper.shop" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-900 flex items-center gap-2 transition duration-200">
-          @whitpepper.shop <Instagram size={18} />
+        <a href="https://www.instagram.com/whitepepper.shop" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-900 flex items-center gap-2 transition duration-200">
+          @whitepepper.shop <Instagram size={18} />
         </a>
       </div>
       
@@ -33,7 +33,7 @@ export default function InstagramFeed() {
         {instagramPosts.map((post) => (
           <a 
             key={post.id}
-            href="https://www.instagram.com/whitpepper.shop" 
+            href="https://www.instagram.com/whitepepper.shop" 
             target="_blank" 
             rel="noopener noreferrer"
             className="block overflow-hidden rounded-lg group relative"

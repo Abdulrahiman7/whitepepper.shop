@@ -6,8 +6,8 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About Us | WhitPepper Shop</title>
-        <meta name="description" content="Learn about WhitPepper Shop and our premium spices from Coorg, Karnataka." />
+        <title>About Us | WhitePepper Shop</title>
+        <meta name="description" content="Learn about WhitePepper Shop and our premium spices from Coorg, Karnataka." />
       </Helmet>
       
       {/* Hero Section */}
@@ -24,7 +24,7 @@ export default function About() {
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-white font-serif">Our Story</h1>
             <p className="text-white/90 mt-4 max-w-2xl">
-              Discover the journey behind WhitPepper and our commitment to bringing the finest spices from Coorg to your kitchen
+              Discover the journey behind WhitePepper and our commitment to bringing the finest spices from Coorg to your kitchen
             </p>
           </div>
         </div>
@@ -35,7 +35,7 @@ export default function About() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-serif font-bold text-primary mb-6">Our Mission</h2>
           <p className="text-gray-700 text-lg mb-8">
-            At WhitPepper, our mission is to connect spice enthusiasts with the authentic flavors of Coorg, while supporting sustainable farming practices and empowering local communities. We believe that every meal deserves the finest ingredients, and every spice has a story to tell.
+            At WhitePepper, our mission is to connect spice enthusiasts with the authentic flavors of Coorg, while supporting sustainable farming practices and empowering local communities. We believe that every meal deserves the finest ingredients, and every spice has a story to tell.
           </p>
           <div className="flex justify-center">
             <div className="h-1 w-20 bg-amber-500"></div>
@@ -50,7 +50,7 @@ export default function About() {
             <div>
               <h2 className="text-3xl font-serif font-bold text-primary mb-6">Our Journey</h2>
               <p className="text-gray-700 mb-4">
-                Founded in 2018, WhitPepper began with a simple idea: to share the extraordinary spices of Coorg with the world. What started as a small family operation has grown into a beloved brand, trusted for its quality and commitment to tradition.
+                Founded in 2018, WhitePepper began with a simple idea: to share the extraordinary spices of Coorg with the world. What started as a small family operation has grown into a beloved brand, trusted for its quality and commitment to tradition.
               </p>
               <p className="text-gray-700 mb-4">
                 Our journey began when the founders, whose family has been cultivating spices for generations in the misty hills of Coorg, decided to bring their heirloom spices directly to consumers, bypassing middlemen and ensuring fair compensation for farmers.
@@ -176,7 +176,7 @@ export default function About() {
       
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-16 text-center">
-        <h2 className="text-3xl font-serif font-bold text-primary mb-6">Experience the WhitPepper Difference</h2>
+        <h2 className="text-3xl font-serif font-bold text-primary mb-6">Experience the WhitePepper Difference</h2>
         <p className="text-gray-700 max-w-3xl mx-auto mb-8">
           Join us on our journey to bring the authentic flavors of Coorg to kitchens around the world. Whether you're a professional chef or a home cooking enthusiast, our premium spices will elevate your culinary creations.
         </p>

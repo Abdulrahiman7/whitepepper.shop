@@ -63,8 +63,8 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact Us | WhitPepper Shop</title>
-        <meta name="description" content="Get in touch with WhitPepper Shop for any queries about our premium spices from Coorg, Karnataka." />
+        <title>Contact Us | WhitePepper Shop</title>
+        <meta name="description" content="Get in touch with WhitePepper Shop for any queries about our premium spices from Coorg, Karnataka." />
       </Helmet>
       
       {/* Hero Section */}
@@ -102,7 +102,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-medium text-primary mb-1">Our Address</h3>
                     <p className="text-gray-600">
-                      WhitPepper Estates,<br />
+                      WhitePepper Estates,<br />
                       Madikeri, Coorg,<br />
                       Karnataka - 571201
                     </p>
@@ -116,8 +116,8 @@ export default function Contact() {
                   <div>
                     <h3 className="font-medium text-primary mb-1">Email Us</h3>
                     <p className="text-gray-600">
-                      info@whitpepper.shop<br />
-                      support@whitpepper.shop
+                      info@whitepepper.shop<br />
+                      support@whitepepper.shop
                     </p>
                   </div>
                 </div>
@@ -288,7 +288,7 @@ export default function Contact() {
                 allowFullScreen 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                title="WhitPepper Shop Location"
+                title="WhitePepper Shop Location"
               ></iframe>
             </div>
           </div>

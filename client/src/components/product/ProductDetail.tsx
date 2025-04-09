@@ -130,7 +130,7 @@ export default function ProductDetail({ slug }: ProductDetailProps) {
           
           <div className="flex items-center gap-2 mb-4">
             <div className="flex">
-              {renderRatingStars(product.rating)}
+              {renderRatingStars(product.rating || 0)}
             </div>
             <span className="text-gray-600">({product.reviewCount} reviews)</span>
           </div>

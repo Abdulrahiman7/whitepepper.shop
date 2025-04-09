@@ -24,7 +24,7 @@ export default function Checkout() {
     return (
       <>
         <Helmet>
-          <title>Order Confirmation | WhitPepper Shop</title>
+          <title>Order Confirmation | WhitePepper Shop</title>
           <meta name="description" content="Your order has been successfully placed." />
         </Helmet>
         
@@ -61,7 +61,7 @@ export default function Checkout() {
   return (
     <>
       <Helmet>
-        <title>Checkout | WhitPepper Shop</title>
+        <title>Checkout | WhitePepper Shop</title>
         <meta name="description" content="Complete your purchase of premium spices from Coorg." />
       </Helmet>
       

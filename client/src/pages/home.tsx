@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>WhitPepper Shop | Premium Spices from Coorg</title>
+        <title>WhitePepper Shop | Premium Spices from Coorg</title>
         <meta name="description" content="Experience the authentic flavors of handpicked premium spices from Karnataka's spice garden." />
       </Helmet>
 

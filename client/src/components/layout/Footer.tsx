@@ -107,11 +107,11 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={18} className="mt-1 mr-3 text-amber-500" />
-                <span className="text-white/80">WhitPepper Estates, Madikeri, Coorg, Karnataka - 571201</span>
+                <span className="text-white/80">WhitePepper Estates, Madikeri, Coorg, Karnataka - 571201</span>
               </li>
               <li className="flex items-start">
                 <Mail size={18} className="mt-1 mr-3 text-amber-500" />
-                <span className="text-white/80">info@whitpepper.shop</span>
+                <span className="text-white/80">info@whitepepper.shop</span>
               </li>
               <li className="flex items-start">
                 <Phone size={18} className="mt-1 mr-3 text-amber-500" />
@@ -149,7 +149,7 @@ export default function Footer() {
         
         {/* Copyright */}
         <div className="text-center text-white/60 text-sm">
-          <p>&copy; {new Date().getFullYear()} WhitPepper.shop. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} WhitePepper.shop. All rights reserved.</p>
         </div>
       </div>
     </footer>

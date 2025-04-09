@@ -19,8 +19,8 @@ export default function Cart() {
     return (
       <>
         <Helmet>
-          <title>Cart | WhitPepper Shop</title>
-          <meta name="description" content="View your shopping cart at WhitPepper Shop." />
+          <title>Cart | WhitePepper Shop</title>
+          <meta name="description" content="View your shopping cart at WhitePepper Shop." />
         </Helmet>
         
         <div className="container mx-auto px-4 py-12 max-w-4xl">
@@ -46,8 +46,8 @@ export default function Cart() {
   return (
     <>
       <Helmet>
-        <title>Cart ({getTotalItems()}) | WhitPepper Shop</title>
-        <meta name="description" content="View your shopping cart at WhitPepper Shop." />
+        <title>Cart ({getTotalItems()}) | WhitePepper Shop</title>
+        <meta name="description" content="View your shopping cart at WhitePepper Shop." />
       </Helmet>
       
       <div className="container mx-auto px-4 py-8 max-w-6xl">
