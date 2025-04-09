@@ -14,7 +14,7 @@ export default function ProductDetailPage() {
   return (
     <>
       <Helmet>
-        <title>{!isLoading && product ? `${product.name} | WhitPepper Shop` : 'Product Details | WhitPepper Shop'}</title>
+        <title>{!isLoading && product ? `${product.name} | WhitePepper Shop` : 'Product Details | WhitePepper Shop'}</title>
         <meta 
           name="description" 
           content={!isLoading && product ? product.description || "Premium spice from Coorg, Karnataka." : "Explore our premium spices from Coorg, Karnataka."} 

@@ -54,7 +54,7 @@ export default function Header() {
         <div className="flex items-center mb-4 md:mb-0">
           <Link href="/" className="flex items-center">
             <h1 className="text-2xl md:text-3xl font-bold font-serif text-primary">
-              <span className="text-amber-500">Whit</span>Pepper<span className="text-xs font-sans align-top">.shop</span>
+              <span className="text-green-500">White</span>Pepper<span className="text-xs font-sans align-top">.shop</span>
             </h1>
           </Link>
         </div>
@@ -104,7 +104,7 @@ export default function Header() {
           >
             <ShoppingBag className="h-6 w-6" />
             {cartItems > 0 && (
-              <span className="absolute -top-1 -right-1 bg-amber-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+              <span className="absolute -top-1 -right-1 bg-green-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
                 {cartItems}
               </span>
             )}
@@ -141,7 +141,7 @@ export default function Header() {
           <Link
             href="/products"
             className={`text-sm font-medium px-1 py-1 text-primary ${
-              currentLocation === "/products" ? "border-b-2 border-amber-500" : "hover:border-b-2 hover:border-amber-500 transition-all"
+              currentLocation === "/products" ? "border-b-2 border-green-500" : "hover:border-b-2 hover:border-green-500 transition-all"
             }`}
           >
             All Spices
@@ -152,7 +152,7 @@ export default function Header() {
               key={category.id}
               href={`/products?category=${category.slug}`}
               className={`text-sm font-medium px-1 py-1 text-primary ${
-                isCategoryActive(category.slug) ? "border-b-2 border-amber-500" : "hover:border-b-2 hover:border-amber-500 transition-all"
+                isCategoryActive(category.slug) ? "border-b-2 border-green-500" : "hover:border-b-2 hover:border-green-500 transition-all"
               }`}
             >
               {category.name}

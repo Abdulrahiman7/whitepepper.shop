@@ -6,8 +6,8 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About Us | WhitPepper Shop</title>
-        <meta name="description" content="Learn about WhitPepper Shop and our premium spices from Coorg, Karnataka." />
+        <title>About Us | WhitePepper Shop</title>
+        <meta name="description" content="Learn about WhitePepper Shop and our premium spices from Coorg, Karnataka." />
       </Helmet>
       
       {/* Hero Section */}
@@ -24,7 +24,7 @@ export default function About() {
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-white font-serif">Our Story</h1>
             <p className="text-white/90 mt-4 max-w-2xl">
-              Discover the journey behind WhitPepper and our commitment to bringing the finest spices from Coorg to your kitchen
+              Discover the journey behind WhitePepper and our commitment to bringing the finest spices from Coorg to your kitchen
             </p>
           </div>
         </div>
@@ -35,10 +35,10 @@ export default function About() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-serif font-bold text-primary mb-6">Our Mission</h2>
           <p className="text-gray-700 text-lg mb-8">
-            At WhitPepper, our mission is to connect spice enthusiasts with the authentic flavors of Coorg, while supporting sustainable farming practices and empowering local communities. We believe that every meal deserves the finest ingredients, and every spice has a story to tell.
+            At WhitePepper, our mission is to connect spice enthusiasts with the authentic flavors of Coorg, while supporting sustainable farming practices and empowering local communities. We believe that every meal deserves the finest ingredients, and every spice has a story to tell.
           </p>
           <div className="flex justify-center">
-            <div className="h-1 w-20 bg-amber-500"></div>
+            <div className="h-1 w-20 bg-green-500"></div>
           </div>
         </div>
       </section>
@@ -50,7 +50,7 @@ export default function About() {
             <div>
               <h2 className="text-3xl font-serif font-bold text-primary mb-6">Our Journey</h2>
               <p className="text-gray-700 mb-4">
-                Founded in 2018, WhitPepper began with a simple idea: to share the extraordinary spices of Coorg with the world. What started as a small family operation has grown into a beloved brand, trusted for its quality and commitment to tradition.
+                Founded in 2018, WhitePepper began with a simple idea: to share the extraordinary spices of Coorg with the world. What started as a small family operation has grown into a beloved brand, trusted for its quality and commitment to tradition.
               </p>
               <p className="text-gray-700 mb-4">
                 Our journey began when the founders, whose family has been cultivating spices for generations in the misty hills of Coorg, decided to bring their heirloom spices directly to consumers, bypassing middlemen and ensuring fair compensation for farmers.
@@ -96,8 +96,8 @@ export default function About() {
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-amber-600">
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-green-600">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
               </svg>
             </div>
@@ -176,7 +176,7 @@ export default function About() {
       
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-16 text-center">
-        <h2 className="text-3xl font-serif font-bold text-primary mb-6">Experience the WhitPepper Difference</h2>
+        <h2 className="text-3xl font-serif font-bold text-primary mb-6">Experience the WhitePepper Difference</h2>
         <p className="text-gray-700 max-w-3xl mx-auto mb-8">
           Join us on our journey to bring the authentic flavors of Coorg to kitchens around the world. Whether you're a professional chef or a home cooking enthusiast, our premium spices will elevate your culinary creations.
         </p>
