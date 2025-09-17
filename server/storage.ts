@@ -264,7 +264,6 @@ export class MemStorage implements IStorage {
         this.cartItems.delete(item.id);
       }
     }
-    
     return true;
   }
   

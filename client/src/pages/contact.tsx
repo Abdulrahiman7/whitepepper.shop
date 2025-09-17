@@ -116,8 +116,8 @@ export default function Contact() {
                   <div>
                     <h3 className="font-medium text-primary mb-1">Email Us</h3>
                     <p className="text-gray-600">
-                      info@whitepepper.shop<br />
-                      support@whitepepper.shop
+                      abdulandrahiman@gmail.com<br />
+                      
                     </p>
                   </div>
                 </div>
@@ -129,8 +129,8 @@ export default function Contact() {
                   <div>
                     <h3 className="font-medium text-primary mb-1">Call Us</h3>
                     <p className="text-gray-600">
-                      +91 9876543210<br />
-                      +91 9876543211
+                      +91 6364147274<br />
+                      +91 7975155235
                     </p>
                   </div>
                 </div>

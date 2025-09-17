@@ -2,13 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { useCart } from "@/lib/cart";
 import { useQuery } from "@tanstack/react-query";
-import { 
-  Search,
-  User,
-  ShoppingBag,
-  Menu,
-  X
-} from "lucide-react";
+import { Search, User, ShoppingBag, Menu, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Category } from "@shared/schema";
@@ -27,7 +21,6 @@ export default function Header() {
   
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    // Implement search functionality
     if (searchQuery.trim()) {
       window.location.href = `/products?search=${encodeURIComponent(searchQuery)}`;
     }
@@ -52,7 +45,7 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
         {/* Logo */}
         <div className="flex items-center mb-4 md:mb-0">
-          <Link href="/" className="flex items-center">
+          <Link href="/">
             <h1 className="text-2xl md:text-3xl font-bold font-serif text-primary">
               <span className="text-amber-500">White</span>Pepper<span className="text-xs font-sans align-top">.shop</span>
             </h1>
@@ -63,6 +56,7 @@ export default function Header() {
         <button 
           className="md:hidden absolute right-4 top-16 text-primary"
           onClick={toggleMobileMenu}
+          aria-label="Toggle mobile menu"
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -76,11 +70,13 @@ export default function Header() {
               className="w-full px-4 py-2 border rounded-full"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
+              aria-label="Search"
             />
             <Button
               type="submit"
               variant="ghost"
               className="absolute right-0 top-0 bottom-0 px-4 text-primary"
+              aria-label="Submit search"
             >
               <Search size={18} />
             </Button>
@@ -101,6 +97,7 @@ export default function Header() {
           <button 
             onClick={openCart}
             className="py-2 px-3 relative text-primary hover:text-green-700 transition duration-200"
+            aria-label={`Shopping cart with ${cartItems} items`}
           >
             <ShoppingBag className="h-6 w-6" />
             {cartItems > 0 && (
@@ -124,11 +121,13 @@ export default function Header() {
             className="w-full px-4 py-2 border rounded-full"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
+            aria-label="Search"
           />
           <Button
             type="submit"
             variant="ghost"
             className="absolute right-0 top-0 bottom-0 px-4 text-primary"
+            aria-label="Submit search"
           >
             <Search size={18} />
           </Button>
