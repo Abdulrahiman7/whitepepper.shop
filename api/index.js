@@ -1,11 +1,5 @@
-const express = require('express');
-const { registerRoutes } = require('../server/routes');
-
-const app = express();
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-
-// Register all your routes
-registerRoutes(app);
-
-module.exports = app;
+// This file needs to be converted to TypeScript and use proper imports
+// For now, let's create individual route files for Vercel
+module.exports = (req, res) => {
+  res.status(200).json({ message: "API is working" });
+};
